@@ -1,12 +1,15 @@
 #include<bits/stdc++.h>
+#define fr first
+#define sc second
 using namespace std;
-int gen(int l,int r){
-	return l+(rand()%(r-l+1));
-}
+typedef long long ll;
+typedef long double ld;
+template<class T>void umax(T &a,T b){if(a<b)a=b;}
+template<class T>void umin(T &a,T b){if(b<a)a=b;}
+#ifdef juggernaut
+    #define printl(args...) printf(args)
+#else
+    #define printl(args...) 0
+#endif
 int main(){
-    srand(time(NULL));
-    int n=gen(1,10);
-    int k=gen(1,n);
-    printf("%d %d\n",n,k);
-    for(int i=1;i<=n;i++)printf("%d ",gen(1,5000));
 }
